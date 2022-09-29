@@ -858,6 +858,11 @@ body{
 .blog .container {
     padding-bottom: 40px;
   }
+  .subtitle{
+    margin: 0;
+    font-size: 20px;   
+    color: #302e4d;
+}
   
   .blog .blog-item {
     -ms-flex: 0 0 33.33%;
