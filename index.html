@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/skins/orange.css" type="text/css" data-class="orange" class="ch-color" disabled>
   <link rel="stylesheet" href="css/skins/blue.css" type="text/css" data-class="blue" class="ch-color" disabled>
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <div class="aside">
@@ -319,7 +320,7 @@
           <div class="icon"><i class="fa fa-folder"></i></div>
           <h5 class="title">OSY</h5>
           <p class="lead">Overview of Operating System.</p>
-          <p class="lead"><a href="assets/osy.rar"><i class="fa fa-download" style="color: #0a57f9; font-size: 23px;"></i></a>   Download</p>
+          <p class="lead"><div id="div1" class="fa" style="color: #0a57f9; font-size: 23px;"></div><a href="assets/osy.rar" style="color: #0a57f9; font-weight: 400;"> Download</a></p>
         </div>
         
       </div>
@@ -329,7 +330,7 @@
           <div class="icon"><i class="fa fa-folder"></i></div>
           <h5 class="title">DCO</h5>
           <p class="lead">Data Communication.</p>
-          <p class="lead"><a href="assets/DCO Notes.rar"><i class="fa fa-download" style="color: #0a57f9; font-size: 23px;"></i></a>   Download</p>
+          <p class="lead"><div id="div2" class="fa" style="color: #0a57f9; font-size: 23px;"></div><a href="assets/DCO Notes.rar" style="color: #0a57f9; font-weight: 400;"> Download</a></p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
@@ -337,7 +338,7 @@
           <div class="icon"><i class="fa fa-folder"></i></div>
           <h5 class="title">ETI</h5>
           <p class="lead">Emerging Trends in IT.</p>
-          <p class="lead"><a href="assets/ETI notes.rar"><i class="fa fa-download" style="color: #0a57f9; font-size: 23px;"></i></a>   Download</p>
+          <p class="lead"><div id="div3" class="fa" style="color: #0a57f9; font-size: 23px;"></div><a href="assets/ETI notes.rar"> Download</a></p>
          
         </div>
       </div>
@@ -674,6 +675,43 @@
             loop: true
           });
   </script>
+  <script>
+    function openfolder() {
+      var a;
+      a = document.getElementById("div1");
+      a.innerHTML = "&#xf114;";
+      setTimeout(function () {
+          a.innerHTML = "&#xf115;";
+        }, 1000);
+    }
+    openfolder();
+    setInterval(openfolder, 2000);
+    </script>
+    <script>
+      function openfolder() {
+        var a;
+        a = document.getElementById("div2");
+        a.innerHTML = "&#xf114;";
+        setTimeout(function () {
+            a.innerHTML = "&#xf115;";
+          }, 1000);
+      }
+      openfolder();
+      setInterval(openfolder, 2000);
+      </script>
+      <script>
+        function openfolder() {
+          var a;
+          a = document.getElementById("div3");
+          a.innerHTML = "&#xf114;";
+          setTimeout(function () {
+              a.innerHTML = "&#xf115;";
+            }, 1000);
+        }
+        openfolder();
+        setInterval(openfolder, 2000);
+        </script>
 </body>
 </html>
+
 
